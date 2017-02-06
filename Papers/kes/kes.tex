@@ -960,7 +960,7 @@ of all permutations is given in~\ref{alg:ca_enumerate_permutations}.
 Finally we find:
 \begin{equation}
   f\left(\Gamma_\mathbf{p}\right) \assign
-  \sum_{\mathbf{q} \in \mathcal{S}_p}
+  \sum_{\mathbf{q} \in \mathcal{S}_\mathbf{p}}
   \sum_{\gamma \in \overline{\gamma_\mathbf{q}}}
   f\left(\gamma_1, \ldots, \gamma_D\right) \,.
 \end{equation}
@@ -1458,7 +1458,7 @@ and shown to be:
 The $K$ in this formula is, for each fixed quadrature
 rule, the maximal value of $K$ for which the Genz-Keister construction results
 in the given rule. For example in the Hermite case $K=9, \ldots, 14$ all yield
-the same node-weight pairs. The order os this rule is then $2\cdot 14 + 1 = 29$.
+the same node-weight pairs. The order of this rule is then $2\cdot 14 + 1 = 29$.
 
 Lemma 4.1 in \cite{holtz} gives conditions on the one-dimensional rules
 such that the Smolyak construction of level $K$ from these rules has
@@ -2009,10 +2009,10 @@ low levels. This is clearly an issue and should give some motivation for studyin
 Genz-Keister constructions.
 For Hermite polynomials $H_n$ Kronrod extensions are rare, especially extensions
 having a high nesting degree. One of the best such extensions found so far is
-$\mathcal{K} = (1, 2, 6, 10, 16, 68)$ with the $z$ sequence:
+$\mathcal{K} = (1, 2, 6, 10, 16, 68)$ with the $\vec{z}$ sequence:
 \begin{equation*}
   \vec{z} = (0, 0, 1, 0, 0, 3, 2, 1, 0, 0, 5, 4, 3, 2, 1, 0, 0, 0, 8, 7,
-             6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, \ldots)
+             6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, \ldots) \,.
              %0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
 \end{equation*}
 Using this extension we get the one-dimensional quadrature nodes
